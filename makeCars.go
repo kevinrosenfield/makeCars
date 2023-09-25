@@ -48,7 +48,7 @@ func (u suv) DescribeCar() string {
 }
 
 func (u suv) GetMPG() float64 {
-	return c.mpg
+	return u.mpg
 }
 
 type coupe struct {
