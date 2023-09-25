@@ -12,8 +12,12 @@ type sedan struct {
 	transmission string
 }
 
-func MakeSedan() Car {
-	return &sedan{}
+func MakeSedan(mpg int, color string, transmission string) Car {
+	return &sedan{
+		mpg:          mpg,
+		color:        color,
+		transmission: transmission,
+	}
 }
 
 func (s sedan) DescribeCar() string {
@@ -26,8 +30,12 @@ type suv struct {
 	transmission string
 }
 
-func MakeSUV() Car {
-	return &suv{}
+func MakeSUV(mpg int, color string, transmission string) Car {
+	return &suv{
+		mpg:          mpg,
+		color:        color,
+		transmission: transmission,
+	}
 }
 
 func (u suv) DescribeCar() string {
@@ -40,8 +48,12 @@ type coupe struct {
 	transmission string
 }
 
-func MakeCoupe() Car {
-	return &coupe{}
+func MakeCoupe(mpg int, color string, transmission string) Car {
+	return &coupe{
+		mpg:          mpg,
+		color:        color,
+		transmission: transmission,
+	}
 }
 
 func (c coupe) DescribeCar() string {
