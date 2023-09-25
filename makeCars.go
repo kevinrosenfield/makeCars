@@ -7,12 +7,12 @@ type Car interface {
 }
 
 type sedan struct {
-	mpg          int
+	mpg          float64
 	color        string
 	transmission string
 }
 
-func MakeSedan(mpg int, color string, transmission string) Car {
+func MakeSedan(mpg float64, color string, transmission string) Car {
 	return &sedan{
 		mpg:          mpg,
 		color:        color,
@@ -25,12 +25,12 @@ func (s sedan) DescribeCar() string {
 }
 
 type suv struct {
-	mpg          int
+	mpg          float64
 	color        string
 	transmission string
 }
 
-func MakeSUV(mpg int, color string, transmission string) Car {
+func MakeSUV(mpg float64, color string, transmission string) Car {
 	return &suv{
 		mpg:          mpg,
 		color:        color,
@@ -43,12 +43,12 @@ func (u suv) DescribeCar() string {
 }
 
 type coupe struct {
-	mpg          int
+	mpg          float64
 	color        string
 	transmission string
 }
 
-func MakeCoupe(mpg int, color string, transmission string) Car {
+func MakeCoupe(mpg float64, color string, transmission string) Car {
 	return &coupe{
 		mpg:          mpg,
 		color:        color,
